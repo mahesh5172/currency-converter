@@ -1,9 +1,9 @@
-name: Build and Deploy train-ticket-reservation
+name: Build and Deploy currency-converter
 
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
