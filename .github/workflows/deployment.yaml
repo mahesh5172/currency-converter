@@ -32,9 +32,10 @@ jobs:
           name: Currency-Converter
           path: target/*.jar
 
-      - name: SonarQube Analysis
+      - name: SonarQube Scan
         run: |
-         mvn sonar:sonar \
+         mvn clean verify \
+         org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
          -Dsonar.projectKey=Currency-project \
          -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
          -Dsonar.login=${{ secrets.SONAR_TOKEN }}
