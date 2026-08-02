@@ -6,7 +6,7 @@
 
     <groupId>com.github.blaxk3</groupId>
     <artifactId>Currency-Converter</artifactId>
-    <version>2025.03.20</version>
+    <version>2025.03.20-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>23</maven.compiler.source>
