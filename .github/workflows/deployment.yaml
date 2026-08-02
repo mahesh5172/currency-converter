@@ -32,4 +32,11 @@ jobs:
           name: Currency-Converter
           path: target/*.jar
 
+      - name: SonarQube Analysis
+        run: |
+         mvn sonar:sonar \
+         -Dsonar.projectKey=Currency-project \
+         -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
+         -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+
           
