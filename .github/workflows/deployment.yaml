@@ -26,10 +26,10 @@ jobs:
       - name: Find WAR file
         run: echo "WAR_FILE=$(ls target/*.war | head -n 1)" >> $GITHUB_ENV
 
-      - name: Upload WAR artifact
+      - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
-          name: war-file
-          path: ${{ env.WAR_FILE }}
+          name: Currency-Converter
+          path: target/*.jar
 
           
