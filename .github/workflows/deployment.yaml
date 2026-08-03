@@ -50,7 +50,7 @@ jobs:
           echo "Deploying $WAR_FILE to DEV ($URL)"
           curl -v -u "$USER:$PASS" "$URL/list"
           curl -v -u "$USER:$PASS" --fail --show-error -T "$WAR_FILE" \
-            "$URL/deploy?path=/train-ticket-reservation&update=true"
+            "$URL/deploy?path=/currency-converter&update=true"
 
       - name: SonarQube Scan
         run: |
